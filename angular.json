@@ -123,5 +123,8 @@
       }
     }
   },
-  "defaultProject": "Todos"
+  "defaultProject": "Todos",
+  "cli": {
+    "analytics": "fbfaf53a-715f-471d-afba-76db860a052a"
+  }
 }

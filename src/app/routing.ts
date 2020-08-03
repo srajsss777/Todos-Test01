@@ -5,11 +5,11 @@ import { Routes, RouterModule } from '@angular/router';
 const routes: Routes = [
   {
     path: 'login',
-    loadChildren: () => import('src/prelogin/prelogin.module').then(m => m.PreloginModule),
+    loadChildren: () => import('src/prelogin/module').then(m => m.PreloginModule),
   },
   {
     path: 'app',
-    loadChildren: () => import('src/postlogin/postlogin.module').then(m => m.PostloginModule),
+    loadChildren: () => import('src/postlogin/module').then(m => m.PostloginModule),
   },
   {
     path: '',

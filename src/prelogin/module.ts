@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { PreloginRoutingModule } from './prelogin-routing.module';
-import { LoginComponent } from './components/login/login.component';
+import { PreloginRoutingModule } from './routing';
+import { LoginComponent } from './components/login/component';
 import {MatCardModule} from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
-//import {MatButtonModule} from '@angular/material/button';
+import {MatButtonModule } from '@angular/material';
+import {MatIconModule} from '@angular/material/icon';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import {MatInputModule} from '@angular/material/input';
     FlexLayoutModule,
     MatFormFieldModule,
     MatInputModule,
-    // MatButtonModule
+    MatButtonModule,
+    MatIconModule
 
   ]
 })

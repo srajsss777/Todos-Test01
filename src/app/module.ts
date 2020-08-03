@@ -1,11 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './component/app.component';
+import { AppRoutingModule } from './routing';
+import { AppComponent } from './component/component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
+import { httpInterceptProviders } from '../shared/interceptor';
 
 
 @NgModule({
@@ -20,7 +19,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
    
 
   ],
-  providers: [],
+  providers: [httpInterceptProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

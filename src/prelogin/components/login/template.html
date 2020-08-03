@@ -1,0 +1,35 @@
+<div fxLayout="row" fxLayoutAlign="center center" class="height-100">
+
+    <mat-card fxLayout="row wrap" fxFlex="50" fxLayoutAlign="center center" class="height-50">
+
+        <mat-card-header fxFlex="80" class="just-center">
+            <mat-card-title>Sign In</mat-card-title>
+        </mat-card-header>
+
+        <mat-card-content fxFlex="80">
+
+            <form fxLayout="row wrap" fxLayoutAlign="center center">
+
+
+                <mat-form-field appearance="outline" fxFlex="80">
+                    <mat-label>User name</mat-label>
+                    <input matInput>
+                </mat-form-field>
+
+                <mat-form-field appearance="outline" fxFlex="80">
+                    <mat-label>Password</mat-label>
+                    <input matInput [type]="hidePassword ? 'password' : 'text'" maxlength="16" oncopy="return false" onpaste="return false">
+                    <mat-icon class="cursor-pointer" matSuffix (click)="hidePassword = !hidePassword">
+                        {{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </mat-form-field>
+
+                <button mat-raised-button color="primary" fxFlex="40">SUBMIT</button>
+
+            </form>
+
+        </mat-card-content>
+
+
+    </mat-card>
+
+</div>
