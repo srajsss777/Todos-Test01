@@ -1,0 +1,34 @@
+mat-toolbar {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+table {
+    width: 90%;
+    margin-top: 7rem;
+}
+
+.updateBtn {
+    background-color: green;
+    color: #ffffff;
+}
+
+.deleteBtn {
+    background-color: yellow;
+    color: #ffffff;
+}
+
+.addBtnContainer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 9999999999;
+}
+
+.addBtnContainer button {
+    margin-left: 4rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
