@@ -24,7 +24,7 @@ table {
     bottom: 0;
     width: 100%;
     background-color: #ffffff;
-    z-index: 9999999999;
+    z-index: 99;
 }
 
 .addBtnContainer button {
